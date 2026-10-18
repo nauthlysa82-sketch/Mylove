@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love ❤️</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px #0002;
+    max-width: 450px;
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ff6699;
+    box-shadow: 0 5px 15px #ffb6c1;
+}
+
+.heart {
+    font-size: 65px;
+    animation: heartbeat 1s infinite;
+}
+
+h1 {
+    color: #ff3366;
+    margin: 15px 0;
+}
+
+p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #ff3366;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e6004c;
+}
+
+h2 {
+    color: #ff3366;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.flying-pictures {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.flying-pictures img {
+    position: absolute;
+    bottom: -180px;
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ff69b4;
+    animation: flyPicture 10s linear infinite;
+}
+
+.flying-pictures img:nth-child(1) {
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.flying-pictures img:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+}
+
+.flying-pictures img:nth-child(3) {
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.flying-pictures img:nth-child(4) {
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.flying-pictures img:nth-child(5) {
+    left: 88%;
+    animation-delay: 6s;
+}
+
+@keyframes flyPicture {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-60vh) rotate(15deg);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-120vh) rotate(-15deg);
+        opacity: 0;
+    }
+}
+
+/* Keep the love card above flying pictures */
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Pictures -->
+        <div class="flying-pictures">
+            <img src="photo_2026-10-18_16-40-18.jpg" alt="Love picture">
+            <img src="photo_2026-10-18_16-40-42.jpg" alt="Love picture">
+            <img src="photo_2026-10-18_16-40-47.jpg" alt="Love picture">
+            <img src="photo_2026-10-18_16-40-51.jpg" alt="Love picture">
+            <img src="photo_2026-10-18_16-40-58.jpg" alt="Love picture">
+            <img src="photo_2026-10-18_16-41-03.jpg" alt="Love picture">
+        </div>
+
+        <div class="heart">❤️</div>
+
+        <h1>I Love You ❤️</h1>
+
+        <p>You are my favorite person in the world. 💕</p>
+
+        <button onclick="showLove()">Click Me 💌</button>
+
+        <h2 id="message"></h2>
+
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("message").innerHTML =
+                `❤️ You are my happiness! I love you forever and ever. 🥹💗 You are the most beautiful part of my life, my favorite person, and my sweetest dream. Every moment with you is special, and every day I love you more than yesterday. 🫶🏻💞
+
+You are the reason behind my smile, the peace in my heart, and the happiness in my soul. 🥰💕 No matter how far apart we are, my heart will always belong to you. I want to stay by your side through every happy moment and every difficult day. 💖🔐
+
+I don't need a perfect life; I just need you in mine. I want to make more memories with you, laugh with you, grow with you, and love you until we're old. 👩🏻‍❤️‍👨🏻💍 You will always be my favorite hello, my hardest goodbye, and my sweetest love. 💋❤️
+
+**I choose you today, tomorrow, and forever.** No matter what happens, I will keep loving you with all my heart. You are my today, my tomorrow, and my always. ♾️💗
+
+**I LOVE YOU SO MUCH, MY BABY. YOU ARE MY EVERYTHING, MY HAPPINESS, MY SAFE PLACE, AND MY FOREVER PERSON. ❤️🥺🔐💋🫂💞**`;
+        }
+    </script>
+
+</body>
+
+</html>
